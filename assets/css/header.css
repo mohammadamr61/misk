@@ -1,0 +1,22 @@
+.hero_wrapper{
+    position: relative;
+}
+nav{
+    float: right;
+    position: relative;
+    background-color: transparent;
+    z-index: 10;
+    
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.5), transparent);
+  z-index: 2;
+}
+.burger-yallow{
+
+right:20px;
+}

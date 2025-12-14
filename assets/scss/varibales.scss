@@ -1,0 +1,43 @@
+@import "./imports";
+
+$primary:       #00372A;
+$secondary:     #D9E378;
+$success:       #198754;
+$info:          #0DCAF0;
+$warning:       #FFCD39;
+$danger:        #B02A37;
+$light:         #F8F9FA;
+$dark:          #212529;
+
+$primary-hover:   #C2D500;
+$secondary-hover: #21B592;
+
+/* Quote variables */
+$quote-line-color: $primary;
+$quote-line-width: 4px;
+$quote-padding-left: 1rem;
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "primary-hover": $primary-hover,
+  "secondary-hover": $secondary-hover
+);
+
+
+$navbar-padding-y: 0;
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+
+
