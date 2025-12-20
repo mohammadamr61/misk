@@ -1,0 +1,188 @@
+@import "./varibales";
+
+
+/* ================================
+   Variables
+================================ */
+
+
+
+/* ================================
+   Base
+================================ */
+
+
+/* ================================
+   Utility Classes
+================================ */
+
+
+
+
+
+/* ================================
+   Navbar / Header
+================================ */
+
+
+/* Menu Button */
+.menu-btn-container {
+  position: relative;
+  width: 164px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+
+  
+
+  .menu-btn {
+    width: 48px;
+    height: 48px;
+    background: transparent;
+    border: 0;
+    
+    
+  }
+}
+
+/* ================================
+   Hero Section
+================================ */
+.hero-section {
+  height: 800px;
+}
+
+.title-container {
+  padding-top: 150px;
+}
+
+/* ================================
+   Floating Image Card
+================================ */
+.news-card-wrapper {
+  width: 1280px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Data Bar */
+.data-bar {
+  background-color: $primary-hover;
+  height: 56px;
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 50vw);
+  width: calc(50vw + 200px);
+  padding-left: calc((100vw - 1350px) / 2 + 2rem);
+  padding-right: 2rem;
+  
+}
+
+/* Floating overlap */
+.floating-section {
+  margin-top: -350px;
+  padding-bottom: 100px;
+}
+
+/* ================================
+   Image & Overlay
+================================ */
+.image-container {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+}
+
+/* ================================
+   Responsive
+================================ */
+@media (max-width: 991px) {
+  .hero-section {
+    height: auto;
+    min-height: 600px;
+    padding-bottom: 100px;
+  }
+
+  .title-container {
+    padding-top: 100px;
+  }
+
+  .floating-section {
+    margin-top: -50px;
+    padding-inline: 1rem;
+  }
+
+  .news-card-wrapper {
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .data-bar {
+    left: -1rem;
+    width: calc(100% + 1rem);
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .news-card-wrapper {
+    height: 400px;
+  }
+
+  .data-bar {
+    padding-left: 1.5rem;
+  }
+}
+
+
+
+
+.footer-top{
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+.footer-bottom{
+  
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px){
+  .footer-bottom{
+  padding-left: 150px;
+  padding-right: 150px;
+  }
+  .footer-top{
+  padding-left: 150px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 150px;
+  }
+}
+
+
+footer{
+  ul{
+    li{
+      transition: 3000ms;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+   
+  a{
+   text-decoration: none;
+  }
+}

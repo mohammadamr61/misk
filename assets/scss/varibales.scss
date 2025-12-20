@@ -8,9 +8,10 @@ $warning:       #FFCD39;
 $danger:        #B02A37;
 $light:         #F8F9FA;
 $dark:          #212529;
-
+$tertiary:      #E4ECEA;
 $primary-hover:   #C2D500;
 $secondary-hover: #21B592;
+$tertiary-hover:  #DBEAE6;
 
 /* Quote variables */
 $quote-line-color: $primary;
@@ -26,13 +27,23 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "primary-hover": $primary-hover,
-  "secondary-hover": $secondary-hover
+  "secondary-hover": $secondary-hover,
+  "tertiary":$tertiary,
+  "tertiary-hover": $tertiary-hover
 );
-
+$navbar-toggler-transition: none;
 
 $navbar-padding-y: 0;
 $navbar-toggler-padding-y: 0;
 $navbar-toggler-padding-x: 0;
+
+$carousel-indicator-width:           30px ;
+$carousel-indicator-height:          10px ;
+$carousel-indicator-hit-area-height: 10px ;
+$carousel-indicator-spacer:          3px ;
+$carousel-indicator-opacity:         0 ;
+$carousel-indicator-active-bg:       $secondary ;
+$carousel-indicator-active-opacity:  1 ;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
