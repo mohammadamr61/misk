@@ -20,25 +20,22 @@ header{
 
       .carousel {
         .carousel-indecators {
-          .triangle-btn {
-            width: 10px;
-            height: 10px;
-            border-top: 12px solid transparent;
-            border-bottom: 12px solid transparent;
-            border-left: 18px solid #198754;
-            /* Bootstrap success green */
-            background: none;
-            border-right: none;
-            padding: 0;
-            cursor: pointer;
-          }
+          .carousel-btn{
+            border: 5px solid #fff;
+          }          
         }
         img{
             height: 600px;
             overflow: hidden;
+            object-position: top;
         }
         .carousel-caption{
-            
+            bottom: auto;
+            right: 50%;
+            left: auto;
+            top: 40%;
+            margin-left: 15%;
+            text-align: start;
           
 
         }
@@ -131,12 +128,12 @@ footer{
 
   /* CENTER VS SIDE HEIGHTS (REAL DIFFERENCE) */
   .slick-center img {
-    height: 800px;
+    height: 810px;
     
   }
 
   .slick-slide:not(.slick-center) img {
-    height: 400px;
+    height: 405px;
   }
 
   /* DATE BADGE */
@@ -145,7 +142,7 @@ footer{
     bottom: 14px;
     left: 14px;
     background: #0b4b3c;
-    color: #fff;
+    
     font-size: 12px;
     padding: 4px 10px;
     border-radius: 12px;
@@ -162,19 +159,32 @@ footer{
   /* CONTROLS */
   .news-controls {
     button {
-      background: $primary;
-      color: #fff;
-      border: none;
+      
+      
+      
       width: 40px;
       height: 40px;
-      border-radius: 50%;
+      
       margin: 0 6px;
+      &:hover{
+    transition: 300ms;
+    background-color: $primary-hover;
+    color: black;
+  }
     }
   }
 
-  /* CTA BUTTON */
+  
  
 }
+.see-more{
+  &:hover{
+    transition: 300ms;
+    background-color: $primary-hover;
+    color: black;
+  }
+}
+
 
 
 // Partners section enhancements
@@ -240,11 +250,13 @@ footer{
   }
 }
 .learn-more {
+  display: inline-flex; // important so transform doesn't break underline
   
-  
+  gap: 0.5rem;
 
-  transition: text-decoration-color  0.5s ease;
-  
+  transition: 
+    text-decoration-color 0.5s ease,
+    transform 0.5s ease;
 
   .arrow {
     display: inline-block;
@@ -252,10 +264,11 @@ footer{
   }
 
   &:hover {
-    text-decoration-color: transparent; // underline fades out
-    
+    text-decoration-color: transparent;
+    transform: translateX(15px); //small right shift
+
     .arrow {
-      transform: translateX(-120px); // arrow moves right
+      transform: translateX(-120px);
     }
   }
 }
@@ -298,4 +311,8 @@ footer{
     }
   }
 }
+.dropdown-menu{
+  &:hover{
 
+  }
+}

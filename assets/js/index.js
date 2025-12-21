@@ -47,7 +47,7 @@ $('.news-slider').slick({
   arrows: false,
   dots: false,
   infinite: true,
-  centerPadding: '140px',
+  centerPadding: '25vw',
   responsive: [
     {
       breakpoint: 992,

@@ -1,28 +1,6 @@
 @import "./varibales";
 
 
-/* ================================
-   Variables
-================================ */
-
-
-
-/* ================================
-   Base
-================================ */
-
-
-/* ================================
-   Utility Classes
-================================ */
-
-
-
-
-
-/* ================================
-   Navbar / Header
-================================ */
 
 
 /* Menu Button */
@@ -85,7 +63,7 @@
 
 /* Floating overlap */
 .floating-section {
-  margin-top: -350px;
+  margin-top: -150px;
   padding-bottom: 100px;
 }
 
@@ -193,3 +171,94 @@ footer{
    text-decoration: none;
   }
 }
+
+.featured-news {
+  .news-slider {
+    overflow: hidden;
+  }
+
+  .news-slide {
+    padding: 0 12px;
+  }
+
+  .news-card {
+    background: #fff;
+    border-radius: 22px;
+    text-align: left;
+    height: 100%;
+  
+  }
+
+  /* IMAGE */
+  .image-wrapper {
+   
+    overflow: hidden;
+    border-radius: 22px;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* CENTER VS SIDE HEIGHTS (REAL DIFFERENCE) */
+  .slick-center img {
+    height: 810px;
+    
+  }
+
+  .slick-slide:not(.slick-center) img {
+    height: 405px;
+  }
+
+  /* DATE BADGE */
+  .news-date {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    background: #0b4b3c;
+    
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+  }
+
+  /* TEXT */
+  h5 {
+    font-size: 18px;
+    margin: 14px 0 6px;
+    padding: 0 6px;
+  }
+
+  
+  /* CONTROLS */
+  .news-controls {
+    button {
+      
+      
+      
+      width: 40px;
+      height: 40px;
+      
+      margin: 0 6px;
+      &:hover{
+    transition: 300ms;
+    background-color: $primary-hover;
+    color: black;
+  }
+    }
+  }
+
+  
+ 
+}
+.see-more{
+  &:hover{
+    transition: 300ms;
+    background-color: $primary-hover;
+    color: black;
+  }
+}
+
+

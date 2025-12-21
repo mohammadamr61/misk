@@ -12348,8 +12348,9 @@ textarea.form-control-lg {
   top: -25px;
   left: calc(50% - 50vw);
   width: calc(50vw + 200px);
-  padding-left: calc((100vw - 1350px) / 2 + 2rem);
+  padding-left: calc((100vw - 1380px) / 2 + 2rem);
   padding-right: 2rem;
+  z-index: 20;
 }
 
 /* Floating overlap */
@@ -12365,6 +12366,13 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.image-container .image-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #00372A;
+  opacity: 0.25;
+  mix-blend-mode: multiply;
 }
 
 /* ================================
